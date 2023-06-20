@@ -15,8 +15,8 @@ list(){
 rename() {
     for i in id_"$hora":"$minuto"._*.txt
     do
-        new_name=$(echo "$file" | sed "s/$hora:$minuto/proc/")
-        mv "$file" "$new_name"
+        new_name=$(echo "$i" | sed "s/$hora:$minuto/proc/")
+        mv "$i" "$new_name"
     done
 }
 
