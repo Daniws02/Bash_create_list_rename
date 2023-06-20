@@ -13,7 +13,7 @@ list(){
 }
 
 rename() {
-    for file in id_"$hora":"$minuto"._*.txt
+    for i in id_"$hora":"$minuto"._*.txt
     do
         new_name=$(echo "$file" | sed "s/$hora:$minuto/proc/")
         mv "$file" "$new_name"
